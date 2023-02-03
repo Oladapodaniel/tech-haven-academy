@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "radian";
+    src: url("../fonts/Radian-Font/Radian-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "radian-400";
+    src: url("../fonts/Radian-Font/Radian-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "radian-600";
+    src: url("../fonts/Radian-Font/Radian-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "radian-700";
+    src: url("../fonts/Radian-Font/Radian-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "radian-Bold";
+    src: url("../fonts/Radian-Font/Radian-ExtraBold.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter-400";
+    src: url("../fonts/Inter/static/Inter-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter-600";
+    src: url("../fonts/Inter/static/Inter-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter-700";
+    src: url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("../fonts/Inter/static/Inter-ExtraBold.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+.radian-medium {
+    font-family: 'radian-600';
+}
+
+.radian-semi-bold {
+    font-family: 'radian-700';
+}
+
+.radian-bold {
+    font-family: 'radian-Bold'
+}
+
+.inter-regular {
+    font-family: 'Inter';
+}
+
+.inter-medium {
+    font-family: 'Inter-600';
+}
+
+.inter-semi-bold {
+    font-family: 'Inter-700';
+}
+
+.inter-bold {
+    font-family: 'Inter-Bold'
+}
+
+.container-top {
+    margin-top: 30px
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000000 !important;
+}
