@@ -22,12 +22,16 @@
                     <!-- Left links -->
                     <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto lg:border-l lg:border-[#BDBDBD]">
                         <li class="nav-item p-2">
-                            <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 inter-medium"
-                                href="#">Home</a>
+                            <NuxtLink to="/">
+                            <div class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 inter-medium"
+                                >Home</div>
+                            </NuxtLink>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 inter-medium"
-                                href="#">Courses</a>
+                            <NuxtLink to="/courses">
+                            <div class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 inter-medium"
+                                href="#">Courses</div>
+                            </NuxtLink>
                         </li>
                         <li class="nav-item p-2">
                             <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 inter-medium"

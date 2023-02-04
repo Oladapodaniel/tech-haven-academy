@@ -14,11 +14,11 @@
         <div class="">
           <NuxtLink :to="`/courses/${item.id}`">
             <div
-              class="rounded-lg shadow-lg bg-white max-w-sm mx-auto course-card transition ease-in-out hover:scale-105 duration-300">
+              class="rounded-lg shadow-lg bg-white max-w-sm mx-auto transition ease-in-out hover:scale-105 duration-300">
               <a href="#!">
                 <img class="rounded-t-lg" :src="item.thumbnail" width="100%" alt="" />
               </a>
-              <div class="p-6">
+              <div class="p-2">
                 <h5 class="text-gray-900 font-medium mb-2">{{ item.category }}</h5>
                 <div class="inter-medium text-lg mb-2 leading-6">{{ item.name }}</div>
                 <p class="text-gray-700 text-base mb-4">
@@ -27,7 +27,7 @@
                 <div class="flex justify-between">
                   <div>
                     <img src="../../static/images/clock.svg" class="inline" />
-                    <span>2 hrs</span>
+                    <span class="text-sm">{{ item.duration }}</span>
                   </div>
                   <div class="font-bold">N{{ item.price }}</div>
                 </div>
@@ -60,9 +60,5 @@ export default {
   height: 48px;
   padding: 9px 4px 9px 40px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), rgba(0, 147, 221, 0.1) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-}
-
-.course-card {
-  min-height: 426px
 }
 </style>

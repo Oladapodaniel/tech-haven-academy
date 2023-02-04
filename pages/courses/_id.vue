@@ -278,7 +278,8 @@
                         </div> -->
                     </div>
                     <div class="flex justify-center mt-8">
-                        <button type="button"
+                                <button type="button"
+                                @click="() => $router.push('/checkout')"
                         class=" inline-block px-6 py-2 border border-primary bg-primary text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-primarydeep hover:shadow-lg focus:bg-primarydeep focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-medium">Buy
                         this course</button>
                     </div>
