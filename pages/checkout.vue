@@ -225,7 +225,7 @@ export default {
                 public_key: 'FLWPUBK_TEST-3b4228a6798c5aecc801b291ef6be683-X',
                 // public_key: process.env.VUE_APP_FLUTTERWAVE_PUBLIC_KEY_LIVE,
                 tx_ref: Math.random(),
-                amount: 500,
+                amount: 10,
                 currency: 'USD',
                 country: 'US',
                 payment_options: 'card,ussd',
