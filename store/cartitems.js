@@ -12,6 +12,9 @@ export const mutations = {
     removecartitem (state, payload) {
         state.cartitems = state.cartitems.filter(i => i.id !== payload.id)
         console.log(state.cartitems)
+    },
+    clearcart (state) {
+        state.cartitems = new Array()
     }
 }
 
@@ -21,5 +24,8 @@ export const actions = {
     },
     removecartitem ({ commit }, payload) {
         commit('removecartitem', payload)
+    },
+    clearcart ({ commit }) {
+        commit('clearcart')
     }
 }

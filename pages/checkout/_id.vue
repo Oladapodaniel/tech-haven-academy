@@ -154,7 +154,7 @@
                         Payment</button>
                 </div>
                 <button type="button"
-                    class="hidden px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    class=" px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     data-bs-toggle="modal" data-bs-target="#exampleModalCenter" ref="successbuttonref">
                     Vertically centered modal
                 </button>
@@ -184,7 +184,7 @@
                             <div class="flex justify-center mb-9">
                                 <button type="button"
                                     class="mt-5 px-9 py-2 bg-[#70c043] text-white rounded-full mx-auto inter-medium"
-                                    @click="($refs.closepaymentmodal.click()), ($router.push('/'))">Home</button>
+                                    @click="homeAfterPayement">Home</button>
                             </div>
                         </div>
 
@@ -265,6 +265,12 @@ export default {
                     },
                 });
             }
+        },
+        homeAfterPayement () {
+            localStorage.removeItem('course')
+            this.$store.dispatch('cartitems/clearcart')
+            this.$refs.closepaymentmodal.click()
+            this.$router.push('/')
         }
     },
     created() {
