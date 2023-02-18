@@ -70,7 +70,7 @@ export default {
             }
         },
         cartItemsCount() {
-            if (this.$store.state.cartitems.cartitems.length == 0) return JSON.parse(localStorage.getItem('course')).length
+            if (this.$store.state.cartitems.cartitems.length == 0 && localStorage.getItem('course')) return JSON.parse(localStorage.getItem('course')).length
             return this.$store.state.cartitems.cartitems.length
         },
         encode () {
