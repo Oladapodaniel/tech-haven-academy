@@ -48,16 +48,22 @@
 
                 <!-- Right elements -->
                 <div class="flex items-center relative">
-                    <button type="button" class="inline-block px-6 py-2 border border-primary text-primary font-medium text-xs leading-tight rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out mr-3 inter-regular">Sign up</button>
-                    <button type="button" class=" inline-block px-6 py-2 border border-primary bg-primary text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-primarydeep hover:shadow-lg focus:bg-primarydeep focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-regular">Login</button>
                     <!-- Icon -->
-                    <a class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4" href="#" v-if="false">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
+                    <a class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4" href="#">
+                        <NuxtLink to="/cart">
+                        <div class="flex">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
                             class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path fill="currentColor"
                                 d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
                             </path>
                         </svg>
+                        
+                            <span v-if="cartItemsCount > 0" class="inline-block relative -top-2 right-2 badge leading-none text-center whitespace-nowrap align-baseline font-bold bg-red-600 text-white rounded ml-1 h-1/2">
+                                {{ cartItemsCount }}
+                            </span>
+                        </div>
+                    </NuxtLink>
                     </a>
                     <div class="dropdown relative" v-if="false">
                         <a class=" text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4 dropdown-toggle hidden-arrow flex items-cen "
@@ -110,6 +116,8 @@
                             </li>
                         </ul>
                     </div>
+                    <button type="button" class="inline-block px-6 py-2 border border-primary text-primary font-medium text-xs leading-tight rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out mr-3 inter-regular">Sign up</button>
+                    <button type="button" class=" inline-block px-6 py-2 border border-primary bg-primary text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-primarydeep hover:shadow-lg focus:bg-primarydeep focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-regular">Login</button>
                 </div>
                 <!-- Right elements -->
             </div>
@@ -197,10 +205,32 @@
     </div>
 </template>
 
-<script></script>
+<script>
+export default {
+    data () {
+        return {}
+    },
+    computed: {
+        cartItemsCount () {
+            if (this.$store.state.cartitems.cartitems.length == 0) return JSON.parse(localStorage.getItem('course')).length
+            return this.$store.state.cartitems.cartitems.length
+        }
+    }
+}
+</script>
 <style scoped>
 .header-shadow {
     box-shadow: 0px 0px 10px rgb(0 0 0 / 20%)
+}
+
+.badge {
+    font-size: 13px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 </style>

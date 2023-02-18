@@ -17,7 +17,7 @@ export default {
     ]
   },
   router: {
-  
+
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -28,7 +28,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~plugins/tailwind'
+    '~plugins/tailwind',
+    '~plugins/toast',
+    '~plugins/inject'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -43,6 +45,21 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    ['nuxt-lazy-load', {
+      images: true,
+      videos: true,
+      audios: true,
+      iframes: true,
+      native: false,
+      directiveOnly: true,
+    }],
+    "vue-toastification/nuxt",
+
+    // You can also pass plugin options
+    ["vue-toastification/nuxt", {
+      timeout: 1000,
+      draggable: false
+    }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

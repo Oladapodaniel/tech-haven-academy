@@ -132,155 +132,14 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="accordion-item bg-white">
-                            <h2 class="accordion-header mb-0" id="headingTwo">
-                                <button
-                                    class="w-full accordion-button collapsed collapse-button inline-block px-3 py-4 mt-3 font-medium text-xs leading-tight focus:bg-[#D0EAF9] rounded-lg focus:rounded-bl-none focus:rounded-br-none border border-[#D0EAF9] focus:border-primary focus:border-solid focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <div class="inter-medium text-left">The Basics</div>
-                                            <div>
-                                                <div class="inline-block">3 videos</div>
-                                                <div class="inline-block ml-2 mt-2">
-                                                    <img class="inline-block" src="../../static/images/clock.svg" />
-                                                    <div class="inline-block">5 mins</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="../../static/images/lock.svg" class="w-4"/>
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div
-                                    class="accordion-body py-4 px-5 block rounded-lg border border-t-0 border-primary border-solid rounded-tr-none rounded-tl-none bg-white">
-                                        <ul class="divide-y">
-                                            <li class="pb-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" checked />
-                                                What is Business Analyst
-                                            </li>
-                                            <li class="py-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" />
-                                                Types of Business Analyst roles
-                                            </li>
-                                            <li class="pt-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" />
-                                                Top Business Analyst skill
-                                            </li>
-                                        </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item bg-white">
-                            <h2 class="accordion-header mb-0" id="headingThree">
-                                <button
-                                    class="w-full accordion-button collapsed collapse-button inline-block px-3 py-4 mt-3 font-medium text-xs leading-tight focus:bg-[#D0EAF9] rounded-lg focus:rounded-bl-none focus:rounded-br-none border border-[#D0EAF9] focus:border-primary focus:border-solid focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    <div class="flex justify-between">
-                                        <div>
-                                            <div class="inter-medium text-left">Software Development Lifecycle</div>
-                                            <div>
-                                                <div class="inline-block">3 videos</div>
-                                                <div class="inline-block ml-2 mt-2">
-                                                    <img class="inline-block" src="../../static/images/clock.svg" />
-                                                    <div class="inline-block">5 mins</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="../../static/images/lock.svg" class="w-4" />
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div
-                                    class="accordion-body py-4 px-5 block rounded-lg border border-t-0 border-primary border-solid rounded-tr-none rounded-tl-none bg-white">
-                                        <ul class="divide-y">
-                                            <li class="pb-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" checked />
-                                                What is Business Analyst
-                                            </li>
-                                            <li class="py-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" />
-                                                Types of Business Analyst roles
-                                            </li>
-                                            <li class="pt-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" />
-                                                Top Business Analyst skill
-                                            </li>
-                                        </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item bg-white">
-                            <h2 class="accordion-header mb-0" id="headingFour">
-                                <button disabled
-                                    class="w-full accordion-button collapsed collapse-button inline-block px-3 py-4 mt-3 font-medium text-xs leading-tight focus:bg-[#D0EAF9] rounded-lg focus:rounded-bl-none focus:rounded-br-none border border-[#D0EAF9] focus:border-primary focus:border-solid focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                    aria-expanded="false" aria-controls="collapseFour">
-                                    <div class="flex justify-between pointer-events-none">
-                                        <div>
-                                            <div class="inter-medium text-left">Initiating a project</div>
-                                            <div>
-                                                <div class="inline-block">3 videos</div>
-                                                <div class="inline-block ml-2 mt-2">
-                                                    <img class="inline-block" src="../../static/images/clock.svg" />
-                                                    <div class="inline-block">5 mins</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="../../static/images/lock.svg" class="w-4" />
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample">
-                                <div
-                                    class="accordion-body py-4 px-5 block rounded-lg border border-t-0 border-primary border-solid rounded-tr-none rounded-tl-none bg-white">
-                                        <ul class="divide-y">
-                                            <li class="pb-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" checked />
-                                                What is Business Analyst
-                                            </li>
-                                            <li class="py-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" />
-                                                Types of Business Analyst roles
-                                            </li>
-                                            <li class="pt-2">
-                                                <input
-                                                    class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                                                    type="checkbox" value="" id="flexCheckDefault" />
-                                                Top Business Analyst skill
-                                            </li>
-                                        </ul>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
-                    <div class="flex justify-center mt-8">
+                    <div class="flex flex-col mt-12">
+                        <button type="button"
+                        @click="addToCart(singleCourse)"
+                    class=" inline-block px-8 py-2 border border-primary text-primary font-medium leading-tight rounded hover:text-white hover:bg-primarydeep focus:bg-primarydeep focus:outline-none focus:ring-0 focus: text-white active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-regular">Add to cart</button>
                                 <button type="button"
-                                @click="() => $router.push('/checkout')"
-                        class=" inline-block px-6 py-2 border border-primary bg-primary text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-primarydeep hover:shadow-lg focus:bg-primarydeep focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-medium">Buy
+                                @click="() => $router.push(`/checkout/${encode}`)"
+                        class=" inline-block px-6 py-2 mt-4 border border-primary bg-primary text-white font-medium leading-tight rounded shadow-md hover:bg-primarydeep hover:shadow-lg focus:bg-primarydeep focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-medium">Buy
                         this course</button>
                     </div>
                 </div>
@@ -291,9 +150,10 @@
 
 <script>
 import courses from '../../mixins/courses.vue';
+import addToCart from '../../mixins/addToCart.vue';
 
 export default {
-    mixins: [courses],
+    mixins: [courses, addToCart],
     data() {
         return {
             courseContent: [
@@ -434,6 +294,10 @@ export default {
     computed: {
         singleCourse () {
             return this.courses.find(i => i.id == this.$route.params.id)
+        },
+        encode () {
+            const converted = this.$injectProp.encode(this.singleCourse.price)
+            return converted
         }
     }
 }

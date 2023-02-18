@@ -12,28 +12,38 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-14">
       <div v-for="(item, index) in courses" :key="index">
         <div class="">
-          <NuxtLink :to="`/courses/${item.id}`">
             <div
               class="rounded-lg shadow-lg bg-white max-w-sm mx-auto transition ease-in-out hover:scale-105 duration-300">
+              <NuxtLink :to="`/courses/${item.id}`">
               <a href="#!">
                 <img class="rounded-t-lg" :src="item.thumbnail" width="100%" alt="" />
               </a>
+              </NuxtLink>
               <div class="p-2">
+                <NuxtLink :to="`/courses/${item.id}`">
                 <h5 class="text-gray-900 font-medium mb-2">{{ item.category }}</h5>
                 <div class="inter-medium text-lg mb-2 leading-6">{{ item.name }}</div>
                 <p class="text-gray-700 text-base mb-4">
                   {{ item.author }}
                 </p>
-                <div class="flex justify-between">
-                  <div>
-                    <img src="../../static/images/clock.svg" class="inline" />
-                    <span class="text-sm">{{ item.duration }}</span>
+                </NuxtLink>
+                <div class="flex justify-between items-center">
+                  <NuxtLink :to="`/courses/${item.id}`">
+                  <div class="">
+                    <div class="inter-semi-bold">CAD ${{ item.price }}</div>
+                    <div>
+                      <img src="../../static/images/clock.svg" class="inline" v-lazy-load />
+                      <span class="text-sm">{{ item.duration }}</span>
+                    </div>
                   </div>
-                  <div class="font-bold">N{{ item.price }}</div>
+                  </NuxtLink>
+                  <button type="button"
+                    @click="addToCart(item)"
+                    class=" inline-block px-8 py-2 border border-primary text-primary font-medium leading-tight rounded hover:text-white hover:bg-primarydeep focus:bg-primarydeep focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg focus:text-white transition duration-150 ease-in-out inter-regular">Add
+                    to cart</button>
                 </div>
               </div>
             </div>
-          </NuxtLink>
         </div>
       </div>
     </div>
@@ -42,9 +52,10 @@
 
 <script>
 import courses from '../../mixins/courses.vue';
+import addToCart from '../../mixins/addToCart.vue';
 export default {
   name: 'IndexPage',
-  mixins: [courses],
+  mixins: [courses, addToCart],
   data() {
     return {
 

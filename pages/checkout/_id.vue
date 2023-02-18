@@ -6,14 +6,14 @@
                 <div class="inter-medium text-2xl mb-5">Payment method</div>
                 <div class="inter-regular mb-4">Select payment method</div>
                 <div id="paypal-button-container"></div>
-                <button @click="clickRadio"
+                <button @click="clickRadioCard"
                     class="w-full block px-6 py-4 font-medium text-left text-gray-700 leading-tight border border-solid border-primary rounded bg-white focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
                     aria-controls="collapseExample">
                     <input
                         class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                         type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <img src="../static/images/credit-card.svg" class="inline-block ml-3 mr-2" />
+                    <img src="../../static/images/credit-card.svg" class="inline-block ml-3 mr-2" />
                     Credit card
                 </button>
 
@@ -114,33 +114,33 @@
                         </div>
                     </div>
                 </div>
-                <button @click="clickRadio"
+                <button @click="clickRadioPaypal"
                     class="w-full block mt-6 px-6 py-4 font-medium text-left leading-tight border border-solid border-primary rounded bg-white focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     type="button">
                     <input
                         class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                         type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <img src="../static/images/paypal.svg" class="inline-block ml-3 mr-2" />
+                    <img src="../../static/images/paypal.svg" class="inline-block ml-3 mr-2" />
                     Paypal
                 </button>
-                <button @click="clickRadio"
+                <button @click="clickRadioFlutter"
                     class="w-full block mt-6 px-6 py-4 font-medium text-left leading-tight border border-solid border-primary rounded bg-white focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     type="button">
                     <input
                         class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                         type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <img src="../static/images/flutterwave_logo.svg" class="inline-block ml-3 mr-2" />
+                    <img src="../../static/images/flutterwave_logo.svg" class="inline-block ml-3 mr-2" />
                     Flutterwave
                 </button>
             </div>
             <div>
-                <img src="../static/images/checkoutbanner.png" class="w-full rounded-t-lg" />
+                <img src="../../static/images/checkoutbanner.png" class="w-full rounded-t-lg" />
                 <div class="px-3 rounded-bl-xl rounded-br-xl bg-[#f5f6f6] border border-solid border-[#e4e4e4]">
                     <div class="flex w-3/4 border mx-auto p-2 relative -top-7 bg-white sub-banner-shadow rounded-md">
-                        <img src="../static/images/sub-banner.png" class="w-1/3 rounded-md object-cover" />
+                        <img src="../../static/images/sub-banner.png" class="w-1/3 rounded-md object-cover" />
                         <div class="pl-2">
-                            <div class="text-gray-700 inter-medium">Business Analysis</div>
-                            <div class="inter-bold text-2xl mt-2">5,000</div>
+                            <div class="text-gray-700 inter-medium">Total</div>
+                            <div class="inter-bold text-2xl mt-2">CAD ${{ decode.toLocaleString() }}</div>
                         </div>
 
                     </div>
@@ -150,7 +150,7 @@
                         <li>Certificate of completion</li>
                     </ul>
                     <button @click="pay"
-                        class="w-full mt-10 mb-7 block px-6 py-2 border border-primary bg-primary text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-primarydeep hover:shadow-lg focus:bg-primarydeep focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-medium">Make
+                        class="w-full mt-10 mb-7 block px-6 py-2 border border-primary bg-primary text-white font-medium leading-tight rounded shadow-md hover:bg-primarydeep hover:shadow-lg focus:bg-primarydeep focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-medium">Make
                         Payment</button>
                 </div>
                 <button type="button"
@@ -167,8 +167,7 @@
                     <div
                         class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
                         <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 rounded-t-md">
-                            <h5 class="text-xl font-medium leading-normal text-gray-800"
-                                id="exampleModalScrollableLabel">
+                            <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalScrollableLabel">
 
                             </h5>
                             <button type="button" ref="closepaymentmodal"
@@ -176,7 +175,7 @@
                                 data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body relative p-4">
-                            <img src="../static/images/successful_payment.png" class="w-1/2 mx-auto" />
+                            <img src="../../static/images/successful_payment.png" class="w-1/2 mx-auto" />
                             <div class="inter-bold text-center text-3xl mt-5 text-[#70c043]">Thank you</div>
                             <div class="radian-medium text-center text-lg text-gray-700 mt-1">Payment completed
                                 successfully</div>
@@ -191,8 +190,6 @@
 
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -212,39 +209,62 @@ export default {
         }
     },
     data() {
-        return {}
+        return {
+            show: false,
+            selectedPaymentType: ''
+        }
+    },
+    computed: {
+        decode() {
+            return this.$injectProp.decode(this.$route.params.id)
+        },
     },
     methods: {
-        clickRadio(e) {
+        clickRadioCard(e) {
             if (e.target.children.length > 0) {
                 e.target.children[0].checked = true
             }
+            this.selectedPaymentType = 'credit_card'
+        },
+        clickRadioFlutter(e) {
+            if (e.target.children.length > 0) {
+                e.target.children[0].checked = true
+            }
+            this.selectedPaymentType = 'flutterwave'
+        },
+        clickRadioPaypal(e) {
+            if (e.target.children.length > 0) {
+                e.target.children[0].checked = true
+            }
+            this.selectedPaymentType = 'paypal'
         },
         pay() {
-            window.FlutterwaveCheckout({
-                public_key: 'FLWPUBK_TEST-3b4228a6798c5aecc801b291ef6be683-X',
-                // public_key: process.env.VUE_APP_FLUTTERWAVE_PUBLIC_KEY_LIVE,
-                tx_ref: Math.random(),
-                amount: 10,
-                currency: 'USD',
-                country: 'US',
-                payment_options: 'card,ussd',
-                customer: {
-                    // name: props.name,
-                    email: 'oladapodaniel10@gmail.com'
-                },
-                callback: () => {
-                    console.log(this.$refs)
-                    this.$refs.successbuttonref.click()
+            if (this.selectedPaymentType === 'flutterwave') {
+                window.FlutterwaveCheckout({
+                    public_key: 'FLWPUBK_TEST-3b4228a6798c5aecc801b291ef6be683-X',
+                    // public_key: process.env.VUE_APP_FLUTTERWAVE_PUBLIC_KEY_LIVE,
+                    tx_ref: Math.random(),
+                    amount: this.decode,
+                    currency: 'USD',
+                    country: 'US',
+                    payment_options: 'card,ussd',
+                    customer: {
+                        // name: props.name,
+                        email: 'oladapodaniel10@gmail.com'
+                    },
+                    callback: () => {
+                        console.log(this.$refs)
+                        this.$refs.successbuttonref.click()
 
-                },
-                onclose: () => console.log('Payment closed'),
-                customizations: {
-                    title: 'Business Analysis Course',
-                    description: "Business Analysis Course",
-                    logo: '',
-                },
-            });
+                    },
+                    onclose: () => console.log('Payment closed'),
+                    customizations: {
+                        title: 'Business Analysis Course',
+                        description: "Business Analysis Course",
+                        logo: '',
+                    },
+                });
+            }
         }
     },
     created() {
@@ -281,8 +301,26 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .sub-banner-shadow {
     box-shadow: 0px 4px 34px rgba(9, 44, 76, 0.16);
+}
+
+/* .fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+} */
+
+.fade-enter-from {
+    /* transform: translateX(30px); */
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.fade-leave-to {
+    /* transform: translateX(30px); */
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 </style>
