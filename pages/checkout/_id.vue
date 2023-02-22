@@ -31,7 +31,7 @@
                                         class="form-label inline-block mb-2 text-gray-700">First Name</label>
                                     <input type="text"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" placeholder="Enter first name" />
                                 </div>
                             </div>
                             <div class="md:col-span-6 mt-2">
@@ -40,16 +40,16 @@
                                         class="form-label inline-block mb-2 text-gray-700">Last Name</label>
                                     <input type="text"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" placeholder="Enter last name" />
                                 </div>
                             </div>
                             <div class="md:col-span-6 mt-2">
                                 <div class="">
                                     <label for="exampleFormControlInput1"
-                                        class="form-label inline-block mb-2 text-gray-700">Street</label>
+                                        class="form-label inline-block mb-2 text-gray-700">Address</label>
                                     <input type="text"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" placeholder="Enter address" />
                                 </div>
                             </div>
                             <div class="md:col-span-6 mt-2">
@@ -58,25 +58,25 @@
                                         class="form-label inline-block mb-2 text-gray-700">City</label>
                                     <input type="text"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" placeholder="Enter city" />
                                 </div>
                             </div>
                             <div class="md:col-span-6 mt-2">
                                 <div class="">
                                     <label for="exampleFormControlInput1"
-                                        class="form-label inline-block mb-2 text-gray-700">State</label>
+                                        class="form-label inline-block mb-2 text-gray-700">State/Province</label>
                                     <input type="text"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" placeholder="Enter province" />
                                 </div>
                             </div>
                             <div class="md:col-span-6 mt-2">
                                 <div class="">
                                     <label for="exampleFormControlInput1"
-                                        class="form-label inline-block mb-2 text-gray-700">Zip</label>
+                                        class="form-label inline-block mb-2 text-gray-700">Postal Code</label>
                                     <input type="text"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" placeholder="Enter postal code" />
                                 </div>
                             </div>
                             <div class="md:col-span-12 mt-4 md:mt-0">
@@ -90,16 +90,16 @@
                                         class="form-label inline-block mb-2 text-gray-700">Card Number</label>
                                     <input type="text"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" placeholder="Enter card number" />
                                 </div>
                             </div>
                             <div class="md:col-span-6 mt-2">
                                 <div class="">
                                     <label for="exampleFormControlInput1"
                                         class="form-label inline-block mb-2 text-gray-700">Expiry Date</label>
-                                    <input type="text"
+                                    <input type="date"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" />
                                 </div>
                             </div>
                             <div class="md:col-span-6 mt-2">
@@ -108,7 +108,7 @@
                                         class="form-label inline-block mb-2 text-gray-700">CVV</label>
                                     <input type="text"
                                         class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none"
-                                        id="exampleFormControlInput1" placeholder="**** **** **** *****" />
+                                        id="exampleFormControlInput1" placeholder="Enter CVV" />
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                         <li>Full access to graded assignment</li>
                         <li>Certificate of completion</li>
                     </ul>
-                    <button @click="pay"
+                    <button @click="pay" data-mdb-ripple="true" data-mdb-ripple-color="light"
                         class="w-full mt-10 mb-7 block px-6 py-2 border border-primary bg-primary text-white font-medium leading-tight rounded shadow-md hover:bg-primarydeep hover:shadow-lg focus:bg-primarydeep focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primarydeep active:shadow-lg transition duration-150 ease-in-out inter-medium">Make
                         Payment</button>
                 </div>
@@ -266,7 +266,7 @@ export default {
                 });
             }
         },
-        homeAfterPayement () {
+        homeAfterPayement() {
             localStorage.removeItem('course')
             this.$store.dispatch('cartitems/clearcart')
             this.$refs.closepaymentmodal.click()
