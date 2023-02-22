@@ -2,9 +2,9 @@
     <div class="container mt-10">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="col-span-2 md:col-span-1">
-                <div class="text-primary inter-bold text-3xl md:text-5xl leading-snug">Grow up your skills with online
+                <div class="text-primary inter-bold text-3xl md:text-5xl leading-snug">Grow your skills with online
                     courses from
-                    Tech haven</div>
+                    Tech Haven</div>
                 <div class="mt-3 text-lg">Tech Haven is a global training provider based across the UK that specializes
                     in accredited and bespoke training courses. We crush the barriers of getting
                     a degree.
